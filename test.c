@@ -34,3 +34,9 @@ static unsigned long fibo(unsigned long n)
     }
     return b;
 }
+
+
+static test2()
+{
+    printf("Test2\n");
+}
