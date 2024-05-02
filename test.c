@@ -16,11 +16,6 @@ int main()
     return 0;
 }
 
-int test()
-{
-    return 1;
-}
-
 static unsigned long fibo(unsigned long n)
 {
     if(n <= 1)
@@ -33,10 +28,4 @@ static unsigned long fibo(unsigned long n)
         a = temp;
     }
     return b;
-}
-
-
-static test2()
-{
-    printf("Test2\n");
 }
