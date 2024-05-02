@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "t2.h"
 
 static unsigned long fibo(unsigned long n);
 
@@ -13,12 +14,12 @@ int main()
     unsigned long n = 15;
     printf("fibo of %lu is %lu\n", n, fibo(n));
 
-    return 0;
-}
+    int a = 15;
+    printf("n : %d -> %d\n", a, t2(a));
+    a -= 111;
+    printf("n : %d -> %d\n", a, t2(a));
 
-int test()
-{
-    return 1;
+    return 0;
 }
 
 static unsigned long fibo(unsigned long t)
@@ -33,10 +34,4 @@ static unsigned long fibo(unsigned long t)
         a = temp;
     }
     return b;
-}
-
-
-static test2()
-{
-    printf("Test2\n");
 }
