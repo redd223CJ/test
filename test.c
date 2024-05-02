@@ -21,12 +21,12 @@ int test()
     return 1;
 }
 
-static unsigned long fibo(unsigned long n)
+static unsigned long fibo(unsigned long t)
 {
-    if(n <= 1)
-        return n;
+    if(t <= 1)
+        return t;
     unsigned long a=0, b=1, temp;
-    for(long i = 0; i < n-1; i++)
+    for(long i = 0; i < t-1; i++)
     {
         temp = b;
         b = a + b;
