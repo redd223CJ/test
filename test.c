@@ -15,13 +15,17 @@ int main()
     printf("fibo of %lu is %lu\n", n, fibo(n));
 
     int a = 15;
-    printf("n : %d -> %d\n", a, t2(a));
+    pt2(a);
     a -= 111;
-    printf("n : %d -> %d\n", a, t2(a));
+   pt2(a);
 
     return 0;
 }
 
+static void pt2(int a)
+{
+    printf("n : %d -> %d\n", a, t2(a));
+}
 static unsigned long fibo(unsigned long t)
 {
     if(t <= 1)
